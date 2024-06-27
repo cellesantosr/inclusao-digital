@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logosite.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <title>Inclusão Digital</title>
+
+    <style>
+    
+    /*BODY*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: currentColor;
+        }
+
+    /*HEADER*/
+        header{
+            min-height: 100vh;
+            background: url(images/background.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        header img{
+            height: 52px;
+            width: 52px;
+        }
+        /*NAV*/
+        .nav{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            z-index: 1000;
+            padding: 20px 60px;
+            background-color: rgba(255, 255, 255, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: space-between;
+            box-shadow: 0px 4px 5px rgb(217, 122, 62);
+        }
+        .navbar{
+            text-align: center;
+            gap: 30px;
+            font-size: 14px;
+            font-family: "Rajdhani", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color:#332621;
+            font-weight: 1000;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .navbar a:hover{
+            color: rgb(217, 122, 62);
+        }
+        .navbar a:active{
+            color: rgb(217, 122, 62);
+            text-decoration: overline;
+        }
+        .descer{
+            color: #332621;
+            font-size: 28px;
+        }
+        .tituloprincipal{
+            color: white;
+            text-shadow: 8px 8px 50px rgba(0, 0, 0, 1);
+            font-family: "Lobster", sans-serif;
+            font-weight: 400;
+            font-size: 130px;
+            padding-top: 320px;
+            word-spacing: -25px;
+            font-style: normal;
+            text-align: center;
+        }
+        .banner{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            gap: 30px;
+        }
+        .botaobanner{
+            width: 145px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.5); 
+            border: 2px solid #332621;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 17px;
+            font-family: "Rajdhani", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            box-shadow: 8px 8px 0px rgb(217, 122, 62);
+        }
+        .botaobanner:hover{
+            background-color: rgba(217, 122, 62, 0.5); 
+            box-shadow: 8px 8px 0px rgb(255, 255, 255);
+            color: white;
+        }
+
+    /*MAIN*/
+        main p{
+            text-indent: 20px;
+        }
+        .conteudoprincipal{ 
+            text-align: start;
+        }
+        .conteudoprincipal h1{
+            margin-top: 0;
+            color: #332621;
+            padding-bottom: 20px;
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 60px;
+        }
+        .conteudoprincipal p{
+            font-family: "Open Sans", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 34px;
+        }
+        .conteudoprincipal1{
+            color: white;
+            background-color: #594a44;
+        }
+        .conteudoprincipal1 h1{
+            margin-top: 0;
+            color: #282222;
+        }
+        .conteudoprincipal2{
+            color: black;
+            background-color: white;
+        }
+        hr{
+            width: 50%;
+            margin: 0 auto;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(217, 122, 62);
+        }
+        .img-section-image{
+            margin: auto;
+            height: 409.5px;
+            width: 272.95px;
+        }
+        .div-section-image{
+            margin: auto 0 auto 0;
+            height: 409.5px;
+            width: 272.95px;
+            box-shadow: 8px 8px 0px rgb(217, 122, 62);
+        }
+        .img-section-image2{
+            margin: auto;
+            height: 266.7px;
+            width: 400.01px;
+        }
+        .div-section-image2{
+            margin: auto 0 auto 0;
+            height: 266.7px;
+            width: 400.01px;
+            box-shadow: 8px 8px 0px rgb(217, 122, 62);
+        }
+        .section{
+            padding: 3% 20% 3% 20%;
+            gap: 80px;
+            display: flex;
+        }
+        .section2{
+            padding: 3% 20% 3% 20%;
+            gap: 80px;
+            display: flex;
+        }
+        .section-anchor {
+            display: block;
+            height: 100px; /* Altura do navbar */
+            margin-top: -105px;
+            visibility: hidden; /* Para ocultar a âncora fictícia */
+        }
+        .iframe{
+            display: flex;
+            justify-content: center;
+            height: fit-content;
+            gap: 50px;
+            padding-bottom: 50px;
+        }
+        iframe{
+            height: 272px;
+            width: 480px;
+        }
+
+    /*FOOTER*/
+        .footer1{
+            background-color: white;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
+            gap: 30px;
+        }
+        .divsfooter div{
+            display: flex;
+            justify-content: center;
+            padding-right: 30px;
+            padding-top: 5px;
+        }
+        .divsfooter{
+            border: 2px solid #332621;
+            box-shadow: 8px 10px 0px rgb(217, 122, 62);    
+            padding: 6px 6px;
+            font-size: 13px;
+        }
+        .footer2{
+            padding: 20px 0px;
+            width: 100%;
+            height: 65px;
+            font-size: 13px;
+            background-color: #332621;
+            color: white;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        footer a:hover{
+            text-decoration: underline;
+        }
+        .conteudofooter{
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header class="header" id="HOME">
+
+      <div class="nav">
+        <a href="#HOME" class="logo"><img src="images/logosite.ico" alt="Logo do Site"></a>
+
+        <nav class="navbar">
+
+            <a href="#HOME" lang="en">HOME</a>
+            
+            <a href="#INCLUSÃO-DIGITAL">INCLUSÃO DIGITAL</a>
+            <a href="#IMPORTÂNCIA">IMPORTÂNCIA</a>
+            <a href="#COMO-PROMOVER">COMO PROMOVER</a>
+
+            <a href="integrantes.html">INTEGRANTES</a>
+            <a href="referências.html">REFERÊNCIAS</a>
+            
+        </nav>
+
+        <a href="#footer" class="descer">↓</a>
+      </div>
+
+        <p class="tituloprincipal">Inclusão Digital</p>
+        <div class="banner">
+        <a href="integrantes.html"><div class="botaobanner">INTEGRANTES</div></a>
+        <a href="referências.html"><div class="botaobanner">REFERÊNCIAS</div></a>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="conteudoprincipal2">
+          <div class="section">
+            <section class="conteudoprincipal">
+            <div class="section-anchor" id="INCLUSÃO-DIGITAL"></div>
+            <h1>Inclusão Digital</h1>
+            <p>A inclusão digital deve ser uma prioridade global. No Brasil, mais de 33 milhões de pessoas ainda não têm acesso à internet, conforme um estudo da PwC divulgado pelo portal G1. No entanto, a exclusão digital vai além da infraestrutura ou da conexão. Como será explorado adiante, as disparidades sociais estão diretamente ligadas à falta de acesso aos recursos digitais. Sem acesso à comunicação online, muitos brasileiros perdem oportunidades de emprego e outros benefícios dessa tecnologia. Contribuir para essa causa é uma forma de efetuar mudanças significativas.</p>
+            </section>
+            <div class="div-section-image"><img src="images/casal1.jpg" class="img-section-image"></div>
+          </div> 
+        </div>
+
+        <div class="conteudoprincipal1">
+          <div class="section">
+            <section class="conteudoprincipal">
+            <h1>O que é?</h1>
+                <p>A inclusão digital visa assegurar que todos tenham acesso, contribuam e se beneficiem do mundo digital.</p>
+                    
+                <p>Os órgãos governamentais desempenham um papel central nesse processo, mas é fundamental que a iniciativa privada também colabore, criando soluções inclusivas com potencial de mercado.</p>
+                    
+                <P>Afinal, quem não está conectado globalmente também perde acesso a bens de consumo e fica privado de relacionamentos e oportunidades de desenvolvimento em diversas áreas.</p>
+            </section>
+          </div>
+          </div>
+
+        <div class="conteudoprincipal2">
+          <div class="section2">
+            <div class="div-section-image2"><img src="images/casal3.jpg" class="img-section-image2"></div>
+            <section class="conteudoprincipal">
+            <div class="section-anchor" id="IMPORTÂNCIA"></div>
+            <h1>Importância</h1>
+                <p>A inclusão digital é fundamental e evidente. Em um cenário de Transformação Digital global, onde todas as atividades estão cada vez mais dependentes da internet, cabe aos governantes garantir o acesso livre à web. Isso não apenas promove oportunidades igualitárias, mas também impulsiona o desenvolvimento do país, já que as relações produtivas e sociais estão cada vez mais conectadas digitalmente. Portanto, a democratização do acesso à internet deve ser uma prioridade das políticas públicas.</p>
+            </section> 
+             </div> 
+          </div>
+
+        <div class="conteudoprincipal1">
+          <div class="section">
+            <section class="conteudoprincipal">
+            <div class="section-anchor" id="COMO-PROMOVER"></div>
+            <h1>Como Promover</h1>
+            <p>Promover a inclusão digital é um esforço multifacetado que requer ações coordenadas em diversos níveis. Primeiramente, é essencial expandir a infraestrutura de conectividade, garantindo que áreas rurais, periféricas e comunidades marginalizadas tenham acesso à internet de alta qualidade. Isso envolve não apenas a ampliação da cobertura de banda larga, mas também o fortalecimento das redes móveis para acesso por dispositivos móveis.</p>
+
+            <p>Além disso, é crucial facilitar o acesso a dispositivos tecnológicos, como computadores, tablets e smartphones, especialmente para pessoas de baixa renda. Isso pode ser feito através de programas de subsídio, financiamento acessível ou iniciativas de recondicionamento de dispositivos usados.</p>
+                
+            <p>Educação digital desempenha um papel fundamental na inclusão digital. É necessário oferecer programas educacionais que ensinem desde habilidades básicas, como navegação na internet e uso de aplicativos, até habilidades avançadas, como programação e segurança digital. Esses programas podem ser implementados em escolas, bibliotecas, centros comunitários e online, visando capacitar indivíduos de todas as idades e backgrounds.</p>
+                
+            <p>Além disso, parcerias público-privadas são essenciais para desenvolver soluções inclusivas e sustentáveis. Isso pode incluir políticas que incentivem empresas a oferecerem planos de internet acessíveis, bem como iniciativas de responsabilidade social corporativa que promovam a educação digital e o acesso tecnológico em comunidades carentes.</p>
+                
+            <p>Promover a inclusão digital não se resume apenas a acesso à tecnologia; é também sobre capacitar indivíduos a utilizarem essas ferramentas para melhorar suas vidas. É um esforço contínuo que requer comprometimento de governos, empresas, organizações da sociedade civil e comunidades locais para reduzir as disparidades digitais e promover um desenvolvimento equitativo e sustentável.</p>      
+          </div>
+        </div>
+
+        <div class="conteudoprincipal2">
+          <div class="section">
+            <section class="conteudoprincipal">
+            <h1>Conclusão</h1>
+                <p>A inclusão digital refere-se ao esforço de garantir que todas as pessoas tenham acesso equitativo e habilidades necessárias para utilizar as tecnologias digitais. Isso envolve não apenas fornecer infraestrutura de internet acessível e confiável, mas também promover a educação digital para capacitar indivíduos de todas as idades e backgrounds. Além de facilitar o acesso a dispositivos tecnológicos, como computadores e smartphones, a inclusão digital visa reduzir as disparidades digitais, permitindo que todos possam participar plenamente da economia digital e da sociedade conectada atual.</p>
+            </section>
+          </div>
+        </div>
+        
+        <div class="iframe">
+            <iframe src="https://www.youtube.com/embed/q2cBekxdAj0?si=QLcGTVspM5uKDI8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.799727629486!2d-46.49683758819539!3d-23.647342264669582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce684bc5bfe4e1%3A0x948e99b5c3ca3539!2sCentro%20P%C3%BAblico%20de%20Forma%C3%A7%C3%A3o%20Profissional%20Jo%C3%A3o%20Amazonas!5e0!3m2!1spt-BR!2sbr!4v1716912534259!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <hr>
+
+    </main>
+
+    <footer id="footer">
+
+        <div class="footer1">
+            <div class="divsfooter">
+                <h4>MAPA DO SITE ⨠</h4>
+              <div>
+                <div class="conteudofooter">
+                    <a href="#HOME" lang="en">Home</a>
+                    <a href="#INCLUSÃO-DIGITAL">Inclusão Digital</a>
+                </div>
+                <div class="conteudofooter">
+                    <a href="#IMPORTÂNCIA">Importância</a>  
+                    <a href="#COMO-PROMOVER">Como Promover</a>
+                </div>
+                <div class="conteudofooter">
+                    <a href="integrantes.html">Integrantes</a>
+                    <a href="referências.html">Referências</a>
+                </div>
+              </div>
+            </div>
+            <div class="divsfooter">
+                <h4>INTEGRANTES ⨠</h4>
+              <div>
+                <div class="conteudofooter">
+                    <a href="integrantes/marcelle.html">Marcelle Rezende</a>
+                    <a href="integrantes/matheus.html">Matheus dos Santos</a>  
+                </div>
+                <div class="conteudofooter">
+                    <a href="integrantes/paula.html">Paula Delfino</a>
+                    <a href="integrantes/romilda.html">Romilda de Mello</a>
+                </div>
+                <div class="conteudofooter">
+                    <a href="integrantes/sarah.html">Sarah do Nascimento</a>
+                </div>
+              </div>            
+            </div>
+            <div class="divsfooter">
+                <h4>APOIO ⨠</h4>
+              <div>
+                <div class="conteudofooter">
+                    <a href="https://www.linkedin.com/in/akio-goya/" target="_blank">Prof. Walter Akio Goya</a>
+                    <a href="https://www.linkedin.com/in/alessandra-toyama/" target="_blank">Prof. Alessandra Toyma</a>
+                </div>
+                <div class="conteudofooter">
+                    <a href="https://institutogea.org.br" target="_blank">Instituto GEA</a>
+                    <a href="https://jovenscaminhos.institutogea.org.br" target="_blank">Projetos Jovens Caminhos</a>
+                </div>   
+              </div>               
+            </div>
+        </div>
+
+        <div class="footer2">
+            <p>Copyright ©2024 | Designed by: <a class="linkfooter2" href="integrantes/marcelle.html">Marcelle dos Santos Rezende</a></p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
